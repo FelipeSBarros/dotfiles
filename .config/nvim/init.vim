@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ThePrimeagen/vim-be-good'
 "Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 let g:airline_theme = 'sonokai'
