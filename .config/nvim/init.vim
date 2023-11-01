@@ -1,11 +1,15 @@
-
 call plug#begin()
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'preservim/nerdtree'
 "Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 let g:airline_theme = 'sonokai'
 call plug#end()
 
@@ -59,3 +63,24 @@ colorscheme sonokai
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+
+
+" NerdTree """"""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <C-a> :NERDTreeToggle<CR>
+
+
+" remaps """"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shortcuts for split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
+
+" Telescope """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
